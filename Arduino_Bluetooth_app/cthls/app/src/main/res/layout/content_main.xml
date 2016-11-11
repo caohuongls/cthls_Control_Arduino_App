@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cth.cthls.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:paddingEnd="0dp"
+    android:padding="0dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:text=" Thông tin thiết bị của bạn"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:fontFamily="serif"
+        android:textSize="24sp"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/white"
+        android:padding="20dp"
+        android:elevation="0dp"
+        android:background="@android:color/holo_blue_dark" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Tên thiết bị"
+                android:id="@+id/NAME_DEVICE_TEXT"
+                android:fontFamily="serif"
+                android:textSize="16sp"
+                android:paddingLeft="15dp"
+                android:layout_height="40dp"
+                android:layout_width="50dp"
+                android:background="@android:color/holo_blue_bright"
+                android:layout_margin="1dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/name_device"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:fontFamily="serif"
+                android:background="@android:color/holo_green_light"
+                android:layout_margin="1dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Địa chỉ MAC"
+                android:id="@+id/MAC_TEXT"
+                android:fontFamily="serif"
+
+                android:textSize="16sp"
+                android:paddingLeft="15dp"
+                android:layout_height="40dp"
+                android:layout_width="50dp"
+                android:background="@android:color/holo_blue_bright" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:id="@+id/mac_address"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:fontFamily="serif"
+                android:layout_width="match_parent"
+                android:background="@android:color/holo_green_light"
+                android:layout_margin="1dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Trạng thái kết nối"
+                android:id="@+id/STATUS_TEXT"
+
+                android:fontFamily="serif"
+                android:textSize="16sp"
+                android:paddingLeft="15dp"
+                android:maxWidth="200dp"
+                android:background="@android:color/holo_blue_bright"
+                android:layout_height="60dp"
+                android:layout_margin="1dp" />
+
+            <TextView
+                android:id="@+id/status"
+                android:fontFamily="serif"
+                android:textSize="18sp"
+                android:visibility="visible"
+
+
+                android:autoText="false"
+                android:background="@android:color/holo_green_light"
+                android:layout_width="220dp"
+                android:paddingLeft="10dp"
+                android:layout_height="60dp"
+                android:textAlignment="center"
+                android:layout_margin="1dp" />
+
+
+        </TableRow>
+
+    </TableLayout>
+    <TextView
+        android:text="Danh sách thiết bị kết nối"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LIST_TEXT"
+        android:fontFamily="serif"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_blue_dark"
+        android:padding="20dp"
+        android:layout_margin="1dp" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pairedlist"
+        android:layout_below="@+id/button"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_orange_light"
+        android:layout_marginTop="1dp" />
+
+    <!--
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:layout_marginTop="52dp"
+            android:id="@+id/input"
+            android:layout_below="@+id/status"
+            android:layout_alignStart="@+id/send"
+            android:layout_marginStart="76dp" />
+
+        <Button
+            android:text="send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:id="@+id/send"
+            android:layout_marginStart="8dp"
+            android:layout_below="@+id/input"
+            android:layout_toEndOf="@+id/status" />
+
+        <Button
+            android:text="on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:id="@+id/onledd"
+            android:layout_below="@+id/input"
+            android:layout_toEndOf="@+id/send" />
+
+        <Button
+            android:text="off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/status"
+            android:layout_alignStart="@+id/status"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="18dp"
+            android:id="@+id/offledd" />
+    -->
+
+
+    </LinearLayout>

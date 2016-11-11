@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="THÔNG SỐ CĂN PHÒNG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:padding="20dp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:fontFamily="serif" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:id="@+id/sensor_value"
+        android:clickable="true"
+
+        android:visibility="gone"
+        android:layout_height="50dp" />
+
+
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablelauoyt">
+
+        <TableRow
+            android:layout_width="100dp"
+            android:id="@+id/Row1"
+            android:layout_height="50dp">
+
+            <TextView
+                android:text="Độ sáng"
+                android:id="@+id/light"
+                android:layout_height="50dp"
+                android:layout_width="150dp"
+                android:background="@android:color/holo_blue_bright"
+                android:paddingLeft="15dp"
+                android:textSize="16sp"
+                android:fontFamily="serif"
+                android:layout_margin="1dp" />
+            <TextView
+                android:clickable="false"
+                android:contextClickable="true"
+                android:layout_height="match_parent"
+                android:id="@+id/light_value"
+                android:layout_width="220dp"
+                android:textSize="16sp"
+                android:fontFamily="serif"
+                android:background="@android:color/holo_green_light"
+                android:layout_margin="1dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/Row2" >
+
+
+            <TextView
+                android:text="Nhiệt độ"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/temp"
+                android:background="@android:color/holo_blue_bright"
+                android:paddingLeft="15dp"
+                android:textSize="16sp"
+                android:fontFamily="serif"
+                android:layout_margin="1dp" />
+
+            <TextView
+                android:text=""
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:id="@+id/temp_value"
+                android:textSize="16sp"
+                android:fontFamily="serif"
+                android:background="@android:color/holo_green_light"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/Row3" >
+
+
+            <TextView
+                android:text="Độ ẩm"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/humiditỵ̣"
+                android:background="@android:color/holo_blue_bright"
+                android:paddingLeft="15dp"
+                android:textSize="16sp"
+                android:fontFamily="serif"
+                android:layout_margin="1dp" />
+
+            <TextView
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/humidity_value"
+                android:textSize="16sp"
+                android:fontFamily="serif"
+                android:background="@android:color/holo_green_light"
+                android:layout_margin="1dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/Row4" >
+
+
+            <TextView
+                android:text="Thời gian"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/time"
+                android:background="@android:color/holo_blue_bright"
+                android:paddingLeft="15dp"
+                android:textSize="16sp"
+                android:fontFamily="serif"
+                android:layout_margin="1dp" />
+
+            <TextView
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/time_value"
+                android:textSize="16sp"
+                android:fontFamily="serif"
+                android:background="@android:color/holo_green_light"
+                android:layout_margin="1dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/Row5" >
+
+
+            <TextView
+                android:text="Chuyển động"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/move"
+                android:background="@android:color/holo_blue_bright"
+                android:paddingLeft="15dp"
+                android:textSize="16sp"
+                android:fontFamily="serif"
+                android:layout_margin="1dp" />
+
+            <TextView
+                android:text=""
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:id="@+id/move_value"
+                android:textSize="16sp"
+                android:fontFamily="serif"
+                android:background="@android:color/holo_green_light"
+                android:layout_margin="1dp" />
+
+        </TableRow>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </TableLayout>
+
+</LinearLayout>
